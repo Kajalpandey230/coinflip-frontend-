@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import { CoinFlipGame } from "./components/coinFlipGame"
 
 function App() {
   const [address, setAddress] = useState("d")
@@ -11,7 +12,7 @@ function App() {
     <>
       {address ? (
         <div>
-          coinPlip
+          <CoinFlipGame balance={balance} />
         </div>
       ) : (
         <button onClick={connectWallet}>Connect Wallet</button>
@@ -20,4 +21,4 @@ function App() {
   )
 }
 
-export default App
+export default App
