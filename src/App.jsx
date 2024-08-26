@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { ethers } from 'ethers'
 import Web3Modal from 'web3modal'
-import CoinFlipGame from './components/coinflipgame'
+import { CoinFlipGame } from './components/coinflipgame'
 import { CONTRACT_ADDRESS } from './config'
 
 function App() {
@@ -84,7 +84,9 @@ function App() {
       {address ? (
         <CoinFlipGame contract={contract} balance={balance} updateBalance={updateBalance} />
       ) : (
-        <button onClick={connectWallet}>Connect Wallet</button>
+        <div className="collect-wallet">
+          <button onClick={connectWallet}>Connect Wallet</button>
+        </div>
       )}
     </>
   )
