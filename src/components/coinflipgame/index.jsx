@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { CoinFlip } from "../coinFlip"
+import { CoinFlip } from "../coinflip"
 
 export const CoinFlipGame = ({ balance }) => {
   const [betAmount, setBetAmount] = useState("")

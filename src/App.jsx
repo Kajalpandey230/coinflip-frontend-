@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { CoinFlipGame } from "./components/coinFlipGame"
+import { CoinFlipGame } from "./components/coinflipgame"
 
 function App() {
   const [address, setAddress] = useState("d")
