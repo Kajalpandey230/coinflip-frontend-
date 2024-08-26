@@ -92,6 +92,12 @@ select {
   text-align: center;
 }
 
+.collect-wallet {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
 .coin-flip-controls {
   display: flex;
   gap: 1rem;
