@@ -6,6 +6,6 @@ export const CoinFlip = ({ isFlipping, result }) => {
     <div className={`coin ${isFlipping ? 'flipping' : result || ''}`}>
       <div className="coin-face heads">H</div>
       <div className="coin-face tails">T</div>
-    </div>
-  );
+    </div>
+  )
 }

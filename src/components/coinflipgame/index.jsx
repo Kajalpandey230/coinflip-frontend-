@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { CoinFlip } from "./coinflip"
+import { CoinFlip } from "../coinFlip"
 
 export const CoinFlipGame = ({ balance }) => {
   const [betAmount, setBetAmount] = useState("")
@@ -49,6 +49,6 @@ export const CoinFlipGame = ({ balance }) => {
           Result: {result} - You {result === side ? 'won' : 'lost'}!
         </p>
       )}
-    </div>
-  )
+    </div>
+  )
 }
