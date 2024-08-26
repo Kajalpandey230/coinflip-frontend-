@@ -6,7 +6,7 @@ import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ThirdwebProvider activeChain="sepolia" clientId="">
+    <ThirdwebProvider activeChain="sepolia" clientId="8edc1095f16929f3d7f5d806f97b7630">
         <App />
     </ThirdwebProvider>
   </StrictMode>
