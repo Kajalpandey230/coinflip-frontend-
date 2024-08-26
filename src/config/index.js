@@ -1,0 +1,3 @@
+
+export const CONTRACT_ADDRESS = "0x26b3B88b22072FEc745DF6DFCF08a73Cf18941ca"
+export const CONTRACT_ABI = ""
