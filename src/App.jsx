@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { ethers } from 'ethers'
 import Web3Modal from 'web3modal'
-import CoinFlipGame from './components/CoinFlipGame'
-import { CONTRACT_ADDRESS, CONTRACT_ABI } from './config'
+import CoinFlipGame from './components/coinflipgame'
+import { CONTRACT_ADDRESS } from './config'
 
 function App() {
   const [provider, setProvider] = useState(null)
@@ -52,7 +52,7 @@ function App() {
     const initializeContract = async () => {
       if (provider && signer) {
         try {
-          const contract = new ethers.Contract(CONTRACT_ADDRESS, CONTRACT_ABI, signer)
+          const contract = new ethers.Contract(CONTRACT_ADDRESS, signer)
           setContract(contract)
 
           const balance = await provider.getBalance(address)
